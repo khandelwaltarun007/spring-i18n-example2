@@ -22,7 +22,6 @@ public class App {
 		String lastName = scanner.nextLine();
 		System.out.println("English:");
 		System.out.println(messageSource.getMessage("nameMsg", new Object[] { firstName, lastName }, english));
-
 		System.out.println("Dutch:");
 		Locale dutch = new Locale("du");
 		System.out.println(messageSource.getMessage("msg", null,"No message found in Dutch", dutch));
