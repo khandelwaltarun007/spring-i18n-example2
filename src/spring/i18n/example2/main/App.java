@@ -23,15 +23,12 @@ public class App {
 		System.out.println("English:");
 		System.out.println(messageSource.getMessage("nameMsg", new Object[] { firstName, lastName }, english));
 
-		
 		System.out.println("Dutch:");
 		Locale dutch = new Locale("du");
 		System.out.println(messageSource.getMessage("msg", null,"No message found in Dutch", dutch));
-
 		System.out.println("French:");
 		Locale french = new Locale("fn");
 		System.out.println(messageSource.getMessage("msg", null,"No message found in French", french));
-		
 		System.out.println(messageSource.getMessage("hi", null,"No message found in logging",null));
 	}
 }
